@@ -1,0 +1,110 @@
+* {
+    font-family: sourcecodepro;
+}
+
+pre strong {
+    font-size: 20px;
+}
+
+input {
+    width: 30px;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.triangle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -888;
+}
+
+.info {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 20px;
+    dispaly: block;
+    background: rgb(0, 0, 0);
+ /* Fallback */
+    background: rgba(0, 0, 0, 0.5);
+    width: calc(100% -40px);
+    color: rgba(255, 255, 255, 1);
+}
+
+pre {
+    background: rgb(0, 0, 0);
+ /* Fallback */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+}
+
+.header-logo {
+    margin-bottom: 30px;
+	margin-top: 40px;
+}
+
+#carbonads {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    font-family: oswald;
+}
+
+#carbonads .carbon-text {
+    display: none;
+}
+
+@media only screen and (min-width: 650px) {
+    #carbonads .carbon-text {
+        color: #201e1c;
+        display: block;
+        font-size: 12px;
+        margin-top: 4px;
+        padding: 3px;
+        margin-left: 3px;
+    };
+}
+
+@media only screen and (max-width: 400px) {
+ 
+	
+    #carbonads {
+        display: block;
+        position: relative;
+    };
+}
+
+#carbonads .carbon-poweredby {
+    margin-left: 3px;
+    padding: 3px;
+    color: #201e1c;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#carbonads .carbon-img {
+    display: block;
+}
+
+a {
+    color: orange;
+}
+
+::selection {
+    background: orange;
+    color: #201e1c;
+}
+
+::-moz-selection {
+    background: orange;
+    color: #201e1c;
+}

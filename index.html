@@ -1,1 +1,66 @@
-hai
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <script src="//fast.eager.io/mAuyw2ePHg.js"></script>
+      <link rel="stylesheet" type="text/css" href="//brick.a.ssl.fastly.net/sourcecodepro:400,700:f">
+      <link rel="stylesheet" type="text/css" href="css.css">
+   </head>
+   <body>
+      <center>
+         <img class="header-logo" width=209 src=pimp.png>
+      </center>
+      <div class="info">
+         Make your Google Analytics stand out with Pimp Analytics.
+         Put any 7 letter isogram in the input boxes below and create your own custom GA snippet.
+         From Wikipedia's article on <a href="https://en.wikipedia.org/wiki/Isogram">isograms:</a>
+         "An isogram (also known as a 'nonpattern word') is a logological term for a word or phrase without a repeating letter".
+         Enter non-repeating alphabet [a-z] letters.
+         Note: uppercase letters will be automatically transformed to lowercase.
+         Note: Entering numbers will break your code as per the JS syntax. Inspired by this blogpost:<br>
+         <a href="http://blog.higg.im/2015/03/17/tinkering-with-the-google-analytics-js-snippet-a-lesson-in-isograms/">http://blog.higg.im/2015/03/17/tinkering-with-the-google-analytics-js-snippet-a-lesson-in-isograms/</a>
+      </div>
+      <pre>
+// ENTER YOUR CUSTOM LETTERS HERE &amp;&amp; COPY AND PASTE AS NEEDED
+	
+<input placeholder=i maxlength=1 class="argval1"><input placeholder=s maxlength=1 class="argval2"><input placeholder=o maxlength=1 class="argval3"><input placeholder=g maxlength=1 class="argval4"><input placeholder=r maxlength=1 class="argval5"><input placeholder=a maxlength=1 class="argval6"><input placeholder=m maxlength=1 class="argval7">
+
+
+(function (<strong class="argument-1">i</strong>,<strong class="argument-2">s</strong>,<strong class="argument-3">o</strong>,<strong class="argument-4">g</strong>,<strong class="argument-5">r</strong>,<strong class="argument-6">a</strong>,<strong class="argument-7">m</strong>) {
+     <strong class="argument-1">i</strong>['GoogleAnalyticsObject'] = <strong class="argument-5">r</strong>;
+     <strong class="argument-1">i</strong>[<strong class="argument-5">r</strong>] = <strong class="argument-1">i</strong>[<strong class="argument-5">r</strong>] || function () {
+         (<strong class="argument-1">i</strong>[<strong class="argument-5">r</strong>].q = <strong class="argument-1">i</strong>[<strong class="argument-5">r</strong>].q || []).push(arguments)
+     }, <strong class="argument-1">i</strong>[<strong class="argument-5">r</strong>].l = 1 * new Date();
+     <strong class="argument-6">a</strong> = <strong class="argument-2">s</strong>.createElement(<strong class="argument-3">o</strong>),
+     <strong class="argument-7">m</strong> = <strong class="argument-2">s</strong>.getElementsByTagName(<strong class="argument-3">o</strong>)[0];
+     <strong class="argument-6">a</strong>.async = 1;
+     <strong class="argument-6">a</strong>.src = <strong class="argument-4">g</strong>;
+     <strong class="argument-7">m</strong>.parentNode.insertBefore(<strong class="argument-6">a</strong>, <strong class="argument-7">m</strong>)
+ })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+ ga('create', 'UA-52506676-7', 'auto');
+ ga('send', 'pageview');
+	</pre>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/init.js"></script>
+      <div class="triangle"></div>
+      <script async type="text/javascript" src="http://cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=iwantaneffin" id="_carbonads_js"></script>
+	  <script>
+	 (function (m,a,c,k,i,n,g) {
+     m['GoogleAnalyticsObject'] = i;
+     m[i] = m[i] || function () {
+         (m[i].q = m[i].q || []).push(arguments)
+     }, m[i].l = 1 * new Date();
+     n = a.createElement(c),
+     g = a.getElementsByTagName(c)[0];
+     n.async = 1;
+     n.src = k;
+     g.parentNode.insertBefore(n, g)
+     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+     ga('create', 'UA-52506676-7', 'auto');
+     ga('send', 'pageview');
+	  </script>
+   </body>
+</html>
+
